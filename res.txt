@@ -1,0 +1,5 @@
+DB_Name         Col_Name          Type_Name         Schema_name  object_id   
+--------------  ----------------  ----------------  -----------  ----------  
+BusinessEntity  rowguid           uniqueidentifier  Person       1285579618  
+BusinessEntity  BusinessEntityID  int               Person       1285579618  
+BusinessEntity  ModifiedDate      datetime          Person       1285579618  
