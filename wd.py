@@ -46,3 +46,102 @@ def differ(server_name: str, database_name: str) -> None:
 if __name__ == "__main__":
     #open_file(base, resu)
     differ(server, database)
+
+
+
+
+
+# cursor = conn.cursor()
+# cursor.execute(f"""
+#     IF OBJECT_ID('TestBD.dbo.Testr', 'U') IS NOT NULL
+#     truncate table TestBD.dbo.Testr """)
+#
+# sql="""INSERT TestBD.dbo.Testr VALUES (%s, %s, %s, %s)"""
+# cursor.executemany(sql, var)
+#
+# conn.commit()
+
+
+
+ # try:
+    #     vivod1 = sp.check_output(f'''{path} -connection "HEIN-LENOVO7" -sql "IF OBJECT_ID (N'TestBD.dbo.Today', N'U') IS  NULL SELECT 0 AS res ELSE SELECT 1 AS res" -output result''')
+    #     vivod2 = sp.check_output(f'''{path} -connection "HEIN-LENOVO7" -sql "IF OBJECT_ID (N'TestBD.dbo.Yesterday', N'U') IS  NULL SELECT 0 AS res ELSE SELECT 1 AS res" -output result''')
+    #     vi1 = vivod1.decode(encoding='ascii').split('\r')
+    #     vi2 = vivod2.decode(encoding='ascii').split('\r')
+    #     a = []
+    #     for po in range(len(Bame)):
+    #         a.append(Bame[po] + ' NVARCHAR(50)')
+    #     name_col = str(a)[1:-1].replace("'", '')
+    #     if (vi1[2].split()[0]) == '0':
+    #         try:
+    #             conn = pm.connect(server="HEIN-LENOVO7", database="TestBD")
+    #             print('Successful connection with MSSQL_TODAY')
+    #         except:
+    #             print('No connection with MSSQL_TODAY')
+    #         else:
+    #             print('Create table')
+    #             cursor = conn.cursor()
+    #             cursor.execute(f"""IF OBJECT_ID('TestBD.dbo.Today', 'U') IS NULL CREATE TABLE TestBD.dbo.Today({name_col});""")
+    #             conn.commit()
+    #             cursor.close()
+    #             conn.close()
+    #     if (vi2[2].split()[0]) == '0':
+    #         try:
+    #             conn = pm.connect(server="HEIN-LENOVO7", database="TestBD")
+    #             print('Successful connection with MSSQL_YESTERDAY')
+    #         except:
+    #             print('No connection with MSSQL_YESTERDAY')
+    #         else:
+    #             print('Create table')
+    #             cursor = conn.cursor()
+    #             cursor.execute(f"""IF OBJECT_ID('TestBD.dbo.Yesterday', 'U') IS NULL CREATE TABLE TestBD.dbo.Yesterday({name_col});""")
+    #             conn.commit()
+    #             cursor.close()
+    #             conn.close()
+    #     else:
+    #         print('Table exist')
+    # except:
+    #     print('Problem with DBVIS')
+    # else:
+
+# server = '"Len2"'
+# #name_table=input()
+# vibor = f""""select * from TestBD.dbo.Vigr"""""
+# path = '"C:\Program Files\DbVisualizer\dbviscmd.bat"'
+# p=sp.check_output(f'{path} -connection {server} -sql {vibor}" -output result')
+# var = p.decode(encoding='ascii').split('\r')
+# var.pop(1)
+# var.pop(-1)
+# Bame = tuple(var[0].split())
+# a=[]
+#
+# for i in range (len (Bame)):
+#     a.append(Bame[i]+' NVARCHAR(20)')
+# pp=str(a)
+# pp=pp[1:-1]
+# pp=pp.replace("'",'')
+# print(pp)
+# Bame=tuple(a)
+# print(Bame)
+# print(type(Bame))
+
+
+# var.pop(0)
+# for i in range(len(var)):
+#     var[i] = tuple(var[i].split())
+# var = tuple(var)
+# o=str(var)
+# o=o[1:-1]
+# print(o)
+
+# s='abcd'
+# a=[]
+# s=tuple(s)
+# for i in range (len(s)):
+#     a.append(s[i]+' NVCHARR,')
+# a=tuple(a)
+# print(a)
+# print(type(a))
+#
+# print(s)
+# print(type(s))
