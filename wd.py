@@ -48,6 +48,22 @@ if __name__ == "__main__":
     differ(server, database)
 
 
+# DB='TestBD'
+# server = '"Len2"'
+# vibor = f""""select {DB}.sys.schemas.name as Schema_Name,  {DB}.sys.tables.name as Table_Name ,  {DB}.sys.columns.name as Col_Name,  {DB}.sys.types.name as Type_Name from  {DB}.sys.tables Join  {DB}.sys.columns on  {DB}.sys.tables.object_id=  {DB}.sys.columns.object_id join  {DB}.sys.types on  {DB}.sys.types.system_type_id=  {DB}.sys.columns.system_type_id join  {DB}.sys.schemas on  {DB}.sys.tables.schema_id =  {DB}.sys.schemas.schema_id"""""
+# path = '"C:\Program Files\DbVisualizer\dbviscmd.bat"'
+# p = sp.check_output(f'{path} -connection {server} -sql {vibor}" -output result')
+# var = p.decode(encoding='ascii').split('\r')
+# var.pop(1)
+# var.pop(-1)
+# Bame = tuple(var[0].split())
+# var.pop(0)
+# print(type(var))
+# for i in range(len(var)):
+#     var[i] = tuple(var[i].split())
+# var = tuple(var)
+# print(type(var))
+
 
 
 
